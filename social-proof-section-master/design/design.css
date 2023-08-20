@@ -1,0 +1,232 @@
+body {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+}
+
+/* Rest of the CSS remains unchanged */
+
+.writing {
+    width: 350px;
+    /* Adjust the width as needed */
+    text-align: start;
+    color: hsl(300, 43%, 22%);
+    margin: -50px 20px 0 20px;
+    /* Adjust the margin as needed */
+}
+
+.writing h1 {
+    font-size: 2.7rem;
+    /* Adjust the font size as needed */
+    margin-bottom: 10px;
+    /* Adjust the margin as needed */
+}
+
+.writing p {
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(303, 10%, 53%);
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+
+}
+
+.box {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1 {
+    width: 400px;
+    height: 50px;
+    margin: 0;
+    background: hsl(300, 24%, 96%);
+    /* Reset the margin for the first box */
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+}
+
+#box2 {
+    margin-left: 40px;
+    border-radius: 10px;
+    /* Adjust the margin to create the staggered effect */
+}
+
+#box3 {
+    margin-left: 80px;
+    margin-top: -25px;
+    border-radius: 10px;
+    /* Adjust the margin to create the staggered effect */
+}
+
+.image-container {
+    display: flex;
+    margin-right: 30px;
+}
+
+.image-container img {
+    margin-right: 5px;
+    /* Adjust the value to set the desired spacing between images */
+}
+
+/* To prevent margin from applying to the last image */
+.image-container img:last-child {
+    margin-right: 0;
+}
+
+.avatar {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.buyers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#buyer1 {
+    width: 300px;
+    padding: 20px;
+    height: 185px;
+    border-radius: 10px;
+    background: hsl(300, 43%, 22%);
+    color: white;
+}
+
+#buyer2 {
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+    height: 185px;
+    border-radius: 10px;
+    background: hsl(300, 43%, 22%);
+    color: white;
+}
+
+#buyer3 {
+    margin-top: 45px;
+    width: 300px;
+    padding: 20px;
+    height: 185px;
+    border-radius: 10px;
+    background: hsl(300, 43%, 22%);
+    color: white;
+}
+
+#profil1 {
+    display: flex;
+    align-items: center;
+}
+
+#profil2 {
+    display: flex;
+    align-items: center;
+}
+
+#profil3 {
+    display: flex;
+    align-items: center;
+}
+
+.buyers-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.buyers p {
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.buyer-info h4:first-child {
+    margin-bottom: -10px;
+    /* Adjust the value as needed */
+}
+
+/* Add margin between the image and the h4 elements in the profile */
+.profile .avatar,
+.profile .buyer-info {
+    margin-left: 15px;
+    /* Adjust the value as needed */
+}
+
+.color-pink {
+    color: hsl(333, 80%, 67%);
+}
+
+/* Rest of the CSS remains unchanged */
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .writing {
+        text-align: center;
+    }
+
+    .rating {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        padding: 0;
+        width: 100%;
+        margin:0 ;
+    }
+
+    #box2 {
+        margin-left: 0; /* Remove the left margin for box 2 */
+    }
+
+    #box3 {
+        margin-left: 0; /* Remove the left margin for box 3 */
+    }
+
+
+    .buyers {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -80px;
+    }
+
+    .buyer {
+        width: 100%;
+        margin:0;
+    }
+
+    #buyer3 {
+        margin: 0;
+    }
+}
+
+/* Rest of the CSS remains unchanged */
